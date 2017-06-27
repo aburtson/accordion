@@ -142,4 +142,4 @@ Inside each `li` exists the following elements:
 
 * `.accordion__title`: click target for toggle the content open/closed
 * `.accordion__content__wrapper`: wrapper for the item content. This is needed to set the height of the content when hiding/showing the item content.
-* `.accordion__content`: exists inside `.accordion__content__wrapper`. This contains the HTML item content initially placed inside the parent container, `.accordion > li`. If `fade` is `true`, this will animate opacity values to fade in/out the item content.
+* `.accordion__content`: exists inside `.accordion__content__wrapper`. If `fade` is `true`, this will animate opacity values to fade in/out the item content.
