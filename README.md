@@ -1,10 +1,10 @@
-#Accordion
+# Accordion
 
 This plugin includes an accordion-style dropdown list.
 
 This is used when you want to present the viewer with an overview of related subjects (by title), but want to hide most of the subjects so the viewer can focus on one at a time.
 
-##Initial setup
+## Initial setup
 
 1. _Dependencies:_ verify that the jQuery is included in your project.
 2. Include **accordion.js** in your JS directory.
@@ -12,9 +12,9 @@ This is used when you want to present the viewer with an overview of related sub
 4. Include the HTML inside **accordion.html** somewhere on your site.
 5. Run gulp, and your accordion will be up and running.
 
-##Working with HTML
+## Working with HTML
 
-###Adding new items
+### Adding new items
 
 If you want to add another item to your accordion, copy an existing `<li>` and its contents and paste next to any existing `li` inside `ul.accordion`. Then, delete the HTML inside your `.accordion__title` and `.accordion__content`.
 
@@ -35,9 +35,9 @@ Enter your new content inside `.accordion__title` and `.accordion__content`.
 
 Of course, feel free to remove/replace existing items. The HTML includes three accordion items by default, but two works fine as well.
 
-##Working with JS
+## Working with JS
 
-###The accordion function
+### The accordion function
 
 At the bottom of the __accordion.js__ file, you will find this function:
 
@@ -57,15 +57,15 @@ $('.accordion').accordion({
 });
 ```
 
-####speed
+#### speed
 
 Sets the slide transition time (in milliseconds). Default is `300`.
 
-####fade
+#### fade
 
 If `true`, the slide animation will also fade the item content in/out when toggling open/closed. If `false`, there will be no fade animation when sliding open/closed. Default is `true`.
 
-####sectionsOpen
+#### sectionsOpen
 
 This determines if any items will be open by default. 
 
@@ -84,7 +84,7 @@ sectionsOpen: [ 2, 'last' ]
 If this `sectionsOpen` is undeclared, all items will be closed.
 
 
-###Creating multiple versions
+### Creating multiple versions
 
 The accordion only works on the provided HTML base structure, which has the class `.accordion`. If you want to target all accordions on your site with the same settings, keep the function like so:
 
@@ -119,9 +119,9 @@ $('.your-other-class').accordion({
 
 __Note:__ If you do create different versions of the accordion, make sure to avoid including the default `$('.accordion').accordion();` on the same HTML page as your other accordion versions. 
 
-##Working with CSS
+## Working with CSS
 
-###Page elements
+### Page elements
 
 Below is a basic highlight of the HTML structure.
 
